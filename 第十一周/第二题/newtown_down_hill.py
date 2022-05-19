@@ -10,9 +10,10 @@ def df(x,a):
 def two_divide(left,right,a):
     if(not f(left,a) or not f(right,a)):
         return  left if  not f(left,a)  else right
-    error=0.1;
+    error=0.01;
     mid=(left+right)/2;
-    while(f(mid,a)>error):
+    #问题在于收敛速度，所以选取收敛条件作为误差
+    while(abs(left-right)>error):
         mid=(left+right)/2;
         if(f(left,a)*f(mid,a)<0):
             right=mid;
