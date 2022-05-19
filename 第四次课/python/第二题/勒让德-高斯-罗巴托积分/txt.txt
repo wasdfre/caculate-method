@@ -1,0 +1,65 @@
+Received: from xmbgsz5.mail.qq.com (unknown [113.108.92.49])
+        by mx44 (Coremail) with SMTP id XsCowACHq3FQdURiNxxNAw--.24769S3;
+        Wed, 30 Mar 2022 23:20:49 +0800 (CST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=qq.com; s=s201512;
+        t=1648653648; bh=dEIZKgeA0a22t5QKbRc/NbRIdWx/OmEZ1VfQq64aAvE=;
+        h=From:To:Subject:Date;
+        b=FuRdpve5seIuGk5P7/dy3bfoDlJ8hvziXhPbrUYO3qGYcFNXz1i8lOLf2dwS+8Lt8
+         tiRa9GDTxreqg7tx6cE7mP0kqz1CRkYWYN6HpaFUhKffU5TQEk4Uo6ONsJQK5gvVHm
+         paUAl21TPFA3TpciruLFy8/thR+P4LdDQYqlruxg=
+X-QQ-FEAT: H0t8mHAOoUGN3phUL46ab2wvB9VFhsWv
+X-QQ-SSF: 000000000000000000000000000000Z
+X-QQ-XMAILINFO: NtXZwV1Lq3W4mzqYOzUXISOPL705TUq1zpLrClKTZJ0cmymE5OT/8ein4oKQCZ
+         Iw3/TvMIh9da51JOu++BlkdZOmDf10OrlsL9OhQywhYSUs6S/XeHzikcjYZoyXfRiw0vJj2V7CKl0
+         zZiNRLJQW5cSruEq3dF4fjr4VECBb41s6QN70sz4YEzG/29sEWC3s3Teih3KmtHlnRW+rjOeLTlKq
+         +n58RoEJoWmya0wNiqFYzrS1kupNfJWrNjyk7U2oPkITnc0ME85l7GejXqZIZ8mhIk/n3M6Eehv5X
+         GT4RpKMq7te1UQhRV8BdPJFk5IGPqnivi91c1sABABdU9D+TxAnYj3N+Z9BIHw9yAn7jkQ9OeBJm/
+         vBUaszeq6Rm++ZQicEhSkVrmEUoNkFsfaB8b8evYwjKj2LIMSY/EwafIbWY0TSkMHeXTFYWyDSl13
+         sNnuvpKgOgxwbOi/EeE4JDXodSu/q4rXNSedYPmd/76Dq/t4C2+uggIRVnHvfVF6LmRSkYcSTy5oo
+         0fzOR6SMwbYFirf1Kgy9/PF53bdSDlXKYVWbZgpXYdxy/3cV8/TliWE4fBuVodg16hmw9WJk/+Urj
+         aI3KiD54sHCbZ4hxGVTudFIfqYsGYNZKy8PcwOLCNsfOZ9zS7Q14aQsvVvDc0GxadlUHKiWFh9mRK
+         mB3lx56Ew39kkiA+WtCCesykmwykPJ1kyvdPbVMRA/Zeki26Ev9cC0xTr0TtIh5+38izrb4yDCGuL
+         DjWQIXpIrPH8gpNFIwahvp9nSysc50KLIPw9GtL1JOZUgNij97cxYSyMq7Z+X4yVlr1BDxXhTvz9F
+         qC2cYG9ieFvw+7VdA+uo5oxDg0XNskEcwg7/iWlL0QQdgbdezPwELZcKI3qDZ+UJ9Cs4TsTCc6tV
+X-HAS-ATTACH: no
+X-QQ-BUSINESS-ORIGIN: 2
+X-Originating-IP: 18.138.11.133
+X-QQ-STYLE: 
+X-QQ-mid: webmail423t1648653648t4266960
+From: "=?gb18030?B?scu0y7K7yeGocaWhsrvG+iAg?=" <2247246336@qq.com>
+To: "=?gb18030?B?d2FzZGZyZTIyNTU=?=" <wasdfre2255@163.com>
+Subject: hello
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+        boundary="----=_NextPart_62447550_10E6A0B8_5473598A"
+Content-Transfer-Encoding: 8Bit
+Date: Wed, 30 Mar 2022 23:20:48 +0800
+X-Priority: 3
+Message-ID: <tencent_94528683DBB4A1F60C6302413F950C5AD207@qq.com>
+X-QQ-MIME: TCMime 1.0 by Tencent
+X-Mailer: QQMail 2.x
+X-QQ-Mailer: QQMail 2.x
+X-CM-TRANSID:XsCowACHq3FQdURiNxxNAw--.24769S3
+Authentication-Results: mx44; spf=pass smtp.mail=2247246336@qq.com; dk
+        im=pass header.i=@qq.com
+X-Coremail-Antispam: 1Uf129KBjDUn29KB7ZKAUJUUUUU529EdanIXcx71UUUUU7v73
+        VFW2AGmfu7bjvjm3AaLaJ3UbIYCTnIWIevJa73UjIFyTuYvjxU61CGUUUUU
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_62447550_10E6A0B8_5473598A
+Content-Type: text/plain;
+        charset="gb18030"
+Content-Transfer-Encoding: base64
+
+aGVsbG8=
+
+------=_NextPart_62447550_10E6A0B8_5473598A
+Content-Type: text/html;
+        charset="gb18030"
+Content-Transfer-Encoding: base64
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9R0IxODAzMCI+PGRpdj5oZWxsbzwvZGl2Pg==
+
+------=_NextPart_62447550_10E6A0B8_5473598A--
