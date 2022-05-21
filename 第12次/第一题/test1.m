@@ -7,6 +7,7 @@ b=rand(N,1);             %随机生成向量F
 A=zeros(N);
 a0=rand(N,1);
 for k=0:N-1
+   %这次为什么又构建列向量了
    A(:,k+1)=circshift(a0,k);        %随机生成循环矩阵D
 end
 

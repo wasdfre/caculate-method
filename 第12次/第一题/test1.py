@@ -17,12 +17,13 @@ a1 = np.hstack((a0,a0))
 for k in range(0,N):
     A[k,:]=a1[0,N-k:2*N-k]
 #X(m)Y(N+n-m)
+#直接解方程
 x0 = np.linalg.solve(A,b)
 
 # A(k)*X(k)=Y(K)
 #使用N点FFT转到频域
 Lambda = np.fft.fftn(A[:,0])
-#直接来不行？
+#为什么转换为对角阵，array就不用转行向量了
 inv_lambda = np.diag(1/Lambda)
 #使用IFFT转换频域
 x1 = np.fft.ifftn(np.dot(inv_lambda,np.fft.fftn(b)))
