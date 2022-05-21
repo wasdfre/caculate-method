@@ -3,7 +3,6 @@ import numpy as np
 def f(x,a):
     return np.tan(x)-a*x;
 
-#为什么这个形式
 def df(x,a):
     return 1+a+(np.tan(x)**2)
 
