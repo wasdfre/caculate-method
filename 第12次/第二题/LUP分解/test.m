@@ -1,27 +1,38 @@
 function main()
 
 N=64;
+%小系数
 epsilon=1;
+%边界值
 cminus=exp(-5)+sin(1);
 cplus=exp(5)+sin(1);
+%构造抽样点，切比雪夫点
 j=[1:1:N-1]; 
 x=[1,cos(pi*j/N),-1]';
+%一二阶微分矩阵
 D1=DM1(N);
 D2=D1^2;
 
 % U=zeros(N+1,1);
+%待求
+%A=ep*D2+b*p(x)*D1+q(x),AU=F
 ue=zeros(N+1,1);
 F=zeros(N+1,1);
 P=zeros(N+1,N+1);
 Q=zeros(N+1,N+1);
 
+%拆分
+%U拆分
 UE=zeros(N-1,1);
 U0=zeros(N+1,1);
+%F拆分
 F0=zeros(N-1,1);
 F1=zeros(N-1,1);
+%A拆分，拆上下两个
 A1=zeros(N-1,N-1);
 A0=zeros(N-1,N+1);
 
+%全赋值
 for k=1:N+1
     P(k,k)=p(x(k));
     Q(k,k)=q(x(k));
@@ -30,13 +41,16 @@ for k=1:N+1
     ue(k,1)=uexact(x(k));
     
 end
-
+%A=ep*D2+b*D1+Q
 A=epsilon*D2+P*D1+Q;
+%n-1,n
 A0(1:N-1,1:N+1)=A(2:N,1:N+1);
 A1(1:N-1,1:N-1)=A(2:N,2:N);
 F1(1:N-1)=F(2:N);
+%边界值
 U0(1)=cplus;
 U0(N+1)=cminus;
+%需要减去的部分
 F0=A0*U0;
 
 
@@ -100,13 +114,13 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function x = my_inv( A,b )
-%��Ax=b
+%��Ax=b
 
-% [L,U,P]=lu(A); ����ԪLU�ֽ⣨PLU��
+% [L,U,P]=lu(A); ����ԪLU�ֽ⣨PLU��
 % x=U\(L\(P*b));
 
 
-[P,L,U]=my_lup(A); %����ԪLU�ֽ�(LUP)
+[P,L,U]=my_lup(A); %����ԪLU�ֽ�(LUP)
 x=P*(U\(L\b));
 end
 
