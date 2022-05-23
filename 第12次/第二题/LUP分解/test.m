@@ -63,10 +63,14 @@ U1=inv(A1)*(F1-F0);
 A=A1;
 b=F1-F0;
 
-x=my_inv(A,b);
+x1=my_inv(A,b);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-error=norm(x-U1)
+A=A1;
+b=F1-F0;
+x2=my_luinv(A,b);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+errorLUP=norm(x1-U1)
+errorLU=norm(x1-U1)
 
 end
 
@@ -93,6 +97,7 @@ for k=2:N+1
    end
 end
 end
+
 function f = f(x)
 
 f=(24+5*x)*exp(5*x)+(2+2*x^2)*cos(x^2)-(4*x^2+1)*sin(x^2);
@@ -125,4 +130,13 @@ x=P*(U\(L\b));
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function x = my_luinv( A,b )
+%��Ax=b
 
+% [L,U,P]=lu(A); ����ԪLU�ֽ⣨PLU��
+% x=U\(L\(P*b));
+
+
+[L,U]=LU(A); %����ԪLU�ֽ�(LUP)
+x=U\(L\b);
+end
