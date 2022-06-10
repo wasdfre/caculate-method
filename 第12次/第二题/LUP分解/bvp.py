@@ -83,7 +83,7 @@ def D_matrix(N):
             if(j==0 and k==0):
                 d[j,k]=(2*N**2+1)/6;
             elif(j==N and k==N):
-                d[j,k]=-d[1,1];
+                d[j,k]=-d[0,0];
             elif(j==k):
                 d[j,k]=-x[k]/(2*(1-x[k]**2));
             else:
@@ -108,7 +108,7 @@ def f(x):
 def y(x):
     return np.exp(5*x)+np.sin(x**2);
 #构造插值点
-N=128;
+N=64;
 #按照中间点，边界点的分界更符合逻辑
 X=np.zeros(N+1);
 for i in range(0,N+1):
